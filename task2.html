@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo1"></p>
+    <p>Ages in months</p>
+    <p id="demo"></p>
+    <p>Eligibility to vote:</p>
+    <p id="demo2"></p>
+    <script>
+        const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
+        function myFunction(value, index, array) {
+            return value*12;
+        }
+        let text = "<ul>";
+        ages.forEach(myFunction);
+        
+        text += "</ul>";
+        function myFunction(value, index, array) {
+                text += "<li>" + value + "</li>";
+        }
+
+        document.getElementById("demo1").innerHTML = text;
+        const months = ages.map(f);
+        function f(value, index, array) {
+            return value*12;
+        }
+        document.getElementById("demo").innerHTML = months;
+        
+        //filter
+        function vote(value,index,array){
+            return value>18;
+        }
+        const voters=ages.filter(vote);
+        document.getElementById("demo2").innerHTML = voters;
+
+    </script>
+</body>
+
+</html>

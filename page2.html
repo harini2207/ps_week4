@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <title>Document</title>
+  <style>
+     
+    .aa {
+      padding: 50px 50px 50px 0px;
+      margin-left: 50px;
+    }
+
+    .btn1 {
+      border:none;
+      border-radius: 4px;
+      background-color: rgb(84, 202, 241);
+      color: white;
+      width: 150px;
+      height: 45px;
+    }
+  .btn2{
+    color:white;
+    width: 120px;
+    height:45px;
+     border:none;
+     border-radius:7px;
+    float:right;
+    margin-right:100px;
+  }
+  .new{
+      width: 120px;
+    height:45px;
+     border-radius:7px;
+     float:right;
+    margin-right:20px;
+    }
+
+    .h {
+      margin-left: 50px;
+      width: 700px;
+    }
+
+    .b {
+      margin-right: 25px;
+      float: right;
+      background-color: rgb(84, 202, 241);
+      color: white;
+      width: 150px;
+      height: 45px;
+      text-align: center;
+      border-radius: 4px;
+      border: none;
+    }
+    
+  </style>
+</head>
+
+<body style="background-color:#c9effb">
+
+  <div class="dropdown aa">
+    <button class="btn btn1 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+      aria-haspopup="true" aria-expanded="false">
+      Subject
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Subject 1</a>
+      <a class="dropdown-item" href="#">Subject 2</a>
+      <a class="dropdown-item" href="#">Subject 3</a>
+    </div>
+    <input class="form-control " style="width: 150px; height: 45px;margin-right: 10px; float:right;" type="text"
+      placeholder="#keyword">
+    <select class="form-select b" type="button">
+      <option selected hidden>Difficulty Level</option>
+      <option style="background-color:white;color:black;" value='1' href="#">Easy</option>
+      <option style="background-color:white;color:black;" value='2' href="#">Moderate</option>
+      <option style="background-color:white;color:black;" value='3' href="#">Hard</option>
+    </select>
+
+  </div>
+
+
+
+  <h5 style="margin-left: 51px; padding-bottom: 1px;">Question</h5>
+  <form>
+    <div class="form-group h">
+      <textarea class="form-control" placeholder="type your question here" id="exampleFormControlTextarea1"
+        rows="6"></textarea>
+    </div>
+    <div>
+      <input class="form-control h" style="float:right;width:150px;margin-right:648px;" type="text"
+        placeholder="Answer">
+      <input class="form-control h" style="margin-top:5px;width:320px;margin-bottom:14px;" type="text"
+        placeholder="Option 1">
+    </div>
+    <input class="form-control h" style="width:320px;margin-bottom:14px;" type="text" placeholder="Option 2">
+    <input class="form-control h" style="width:320px;margin-bottom:14px;" type="text" placeholder="Option 3">
+    <input class="form-control h" style="width:320px;margin-bottom:14px;" type="text" placeholder="Option 4">
+  </form>
+  <div>
+  <button type="button" class="btn2 btn-success">Submit</button>
+  <button type="button" class="btn new btn-outline-success">+ New</button>
+  </div>
+
+</body>
+
+
+</html>

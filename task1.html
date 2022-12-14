@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo2"></p>
+    <p id="demo"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+        const companies = [
+            { name: "Company One", category: "Finance", start: 1981, end: 2004 },
+
+            { name: "Company Two", category: "Retail", start: 1992, end: 2008 },
+
+            { name: "Company Three", category: "Auto", start: 1999, end: 2007 },
+
+            { name: "Company Four", category: "Retail", start: 1989, end: 2010 },
+
+            { name: "Company Five", category: "Technology", start: 2009, end: 2014 },
+
+            { name: "Company Six", category: "Finance", start: 1987, end: 2010 },
+
+            { name: "Company Seven", category: "Auto", start: 1986, end: 1996 },
+
+            { name: "Company Eight", category: "Technology", start: 2011, end: 2016 },
+
+            { name: "Company Nine", category: "Retail", start: 1981, end: 1989 }
+
+        ];
+        // let Len = companies.length;
+        // let text = "<ul>";
+        // for (let i = 0; i < Len; i++) {
+        //     if (companies[i]['start'] > 1987) {
+        //         text += "<li>" + companies[i]['name'] + "</li>";
+        //     }
+        // }
+        // text += "</ul>";
+       /* function getFullName(value,index,arr) {
+            if(arr[index]['start']>1987){
+            return arr[index]['name'];
+            }
+            else{
+                return NaN;
+            }
+        }
+        n=companies.map(getFullName);
+
+        
+        let text = "<ul>";
+        n.filter(myFunction);
+        text += "</ul>";
+        function myFunction(value, index, array) {
+                return text += "<li>" + value!=Nan + "</li>";
+        }*/
+        let text = "<ul>";
+        companies.forEach(myFunction);
+        text += "</ul>";
+        function myFunction(value, index, array) {
+            if (array[index]['start'] > 1987)
+                text += "<li>" + array[index]['name'] + "</li>";
+        }
+        document.getElementById("demo").innerHTML = text;
+        let text1 = "<ul>";
+        companies.forEach(myFunc);
+        text1 += "</ul>";
+        function myFunc(value, index, array) {
+            text1 += "<li>" + array[index]['name'] + "</li>";
+        }
+        document.getElementById("demo2").innerHTML = text1;
+        const person = {
+
+            name: "Costas",
+            address: {
+                street: "Lalaland 12"
+            }
+        };
+        document.getElementById("demo3").innerHTML = person['address']['street'];
+        //destructuring
+        const {address :{street}}=person
+        document.getElementById("demo4").innerHTML = street;
+
+    </script>
+</body>
+
+</html>
